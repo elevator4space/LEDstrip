@@ -1,0 +1,37 @@
+{
+    "API_KEY": "UHWAFM-NWVP4R-5UXGQ5-4QIN",
+    "serial": {
+        "port": "/dev/arduino/leds-strip",
+        "baudrate": 9600
+    },
+    "location": {
+        "name": "Toulouse",
+        "latitude": "43.611660",
+        "longitude": "1.429760"
+    },
+    "criteria": {
+        "culmination": 15
+    },
+    "satellites": [
+        {
+            "name": "YAM-2",
+            "NORAD_ID": 48911,
+            "color": [245, 164, 66]
+        },
+        {
+            "name": "YAM-3",
+            "NORAD_ID": 48915,
+            "color": [66, 176, 245]
+        },
+        {
+            "name": "ISS",
+            "NORAD_ID": 25544,
+            "color": [176, 245, 66]
+        },
+        {
+            "name": "Sentinel-2",
+            "NORAD_ID": 40697,
+            "color": [245, 245, 245]
+        }
+    ]
+}

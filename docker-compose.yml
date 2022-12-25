@@ -1,0 +1,24 @@
+######################################################################################################################################################
+
+# @project        Space Elevator ▸ LEDs Strip
+# @file           docker-compose.yml
+# @author         <info@spacelevator.org>
+# @license        Space Elevator 2022
+
+######################################################################################################################################################
+
+version: '3.8'
+
+services:
+  leds-strip:
+    image: leds-strip
+    build:
+      context: .
+    container_name: leds-strip
+    volumes:
+      - /dev:/dev
+      - ./config.json:/app/config.json
+      - /etc/localtime:/etc/localtime
+    privileged: true
+
+######################################################################################################################################################
